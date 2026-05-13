@@ -3,43 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>OneStopCop — London Streetwear & Limited Releases</title>
-  <meta name="description" content="OneStopCop is a London-based online clothing and streetwear project relaunching with curated pieces, limited releases and original designs.">
+  <title>OneStopCop — London Clothing, Streetwear & Limited Releases</title>
+  <meta name="description" content="OneStopCop is a London-based online clothing and streetwear business selling curated apparel, accessories, limited-release goods and original designs.">
   <style>
-    :root {
-      --navy:#10223d;
-      --muted:#6c7280;
-      --paper:#f5efe6;
-      --blue:#bdd9ea;
-      --line:rgba(16,34,61,.16);
-    }
+    :root { --navy:#10223d; --muted:#667085; --paper:#f5efe6; --blue:#bdd9ea; --line:rgba(16,34,61,.16); --white:rgba(255,252,247,.78); }
     * { box-sizing:border-box; }
-    body {
-      margin:0;
-      font-family:-apple-system,BlinkMacSystemFont,"Inter","Segoe UI",sans-serif;
-      background:radial-gradient(circle at top left, rgba(189,217,234,.55), transparent 34%), var(--paper);
-      color:var(--navy);
-    }
-    main { min-height:100vh; display:grid; place-items:center; padding:28px; }
-    .card {
-      width:min(820px,100%);
-      border:1px solid var(--line);
-      background:rgba(255,252,247,.72);
-      padding:clamp(28px,6vw,56px);
-      border-radius:28px;
-      box-shadow:0 28px 90px rgba(16,34,61,.10);
-    }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Inter","Segoe UI",sans-serif; background:radial-gradient(circle at top left, rgba(189,217,234,.58), transparent 34%), var(--paper); color:var(--navy); }
+    main { min-height:100vh; padding:28px; }
+    .wrap { width:min(920px,100%); margin:0 auto; }
+    .card { border:1px solid var(--line); background:var(--white); padding:clamp(28px,6vw,56px); border-radius:28px; box-shadow:0 28px 90px rgba(16,34,61,.10); margin:34px 0; }
     .logo { width:124px; height:124px; border-radius:28px; display:block; margin-bottom:34px; box-shadow:0 16px 40px rgba(16,34,61,.12); }
     .eyebrow { text-transform:uppercase; letter-spacing:.18em; font-size:12px; color:var(--muted); margin-bottom:18px; }
-    h1 {
-      font-family:Georgia,"Times New Roman",serif;
-      font-size:clamp(46px,10vw,94px);
-      line-height:.9;
-      letter-spacing:-.055em;
-      margin:0 0 24px;
-      font-weight:500;
-    }
-    p { font-size:18px; line-height:1.58; color:#1f2e46; max-width:650px; margin:0 0 16px; }
+    h1 { font-family:Georgia,"Times New Roman",serif; font-size:clamp(46px,10vw,94px); line-height:.9; letter-spacing:-.055em; margin:0 0 24px; font-weight:500; }
+    h2 { font-family:Georgia,"Times New Roman",serif; font-size:30px; margin:0 0 14px; font-weight:500; }
+    p, li { font-size:17px; line-height:1.58; color:#1f2e46; }
+    p { max-width:720px; margin:0 0 16px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; margin-top:20px; }
+    .box { border:1px solid var(--line); border-radius:18px; padding:18px; background:rgba(255,255,255,.42); }
+    .box strong { display:block; margin-bottom:8px; }
     .pills { margin-top:26px; }
     .pill { display:inline-block; background:var(--blue); color:var(--navy); padding:8px 13px; border-radius:999px; font-size:14px; margin:0 8px 10px 0; border:1px solid rgba(16,34,61,.08); }
     .contact { margin-top:34px; padding-top:22px; border-top:1px solid var(--line); color:var(--muted); font-size:15px; line-height:1.7; }
@@ -48,23 +29,42 @@
 </head>
 <body>
   <main>
-    <section class="card">
-      <img class="logo" src="onestopcop-logo.png" alt="OneStopCop logo">
-      <div class="eyebrow">London · Est. 2020 · Relaunching soon</div>
-      <h1>OneStopCop</h1>
-      <p>OneStopCop is a London-based online clothing and streetwear project relaunching with curated pieces, limited-release goods and original designs.</p>
-      <p>The storefront, product line and customer enquiry channels are currently being rebuilt.</p>
-      <div class="pills">
-        <span class="pill">Clothing</span>
-        <span class="pill">Streetwear</span>
-        <span class="pill">Limited releases</span>
-        <span class="pill">Original designs</span>
-      </div>
-      <div class="contact">
-        Business enquiries: <a href="mailto:sales@onestopcop.co.uk">sales@onestopcop.co.uk</a><br>
-        Domain: onestopcop.co.uk
-      </div>
-    </section>
+    <div class="wrap">
+      <section class="card">
+        <img class="logo" src="onestopcop-logo.png" alt="OneStopCop logo">
+        <div class="eyebrow">London · Est. 2020 · Online retail</div>
+        <h1>OneStopCop</h1>
+        <p>OneStopCop is a London-based online clothing and streetwear business selling curated apparel, accessories, limited-release goods and original designs.</p>
+        <p>We source and sell products online through direct customer enquiries, marketplace channels and our own web presence.</p>
+        <div class="pills">
+          <span class="pill">Clothing</span><span class="pill">Streetwear</span><span class="pill">Accessories</span><span class="pill">Limited releases</span><span class="pill">Original designs</span>
+        </div>
+        <div class="contact">
+          Business enquiries: <a href="mailto:sales@onestopcop.co.uk">sales@onestopcop.co.uk</a><br>
+          Website: onestopcop.co.uk
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Products and services</h2>
+        <div class="grid">
+          <div class="box"><strong>Clothing & streetwear</strong>Curated apparel, archive pieces and future OneStopCop-designed products.</div>
+          <div class="box"><strong>Accessories</strong>Selected accessories and related fashion goods.</div>
+          <div class="box"><strong>Limited-release goods</strong>Limited drops and sourced items sold with clear product descriptions and fulfilment terms.</div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>How we operate</h2>
+        <p>Customers contact OneStopCop through the website, social media, marketplace listings or direct enquiry. Orders are handled through approved payment providers, marketplace checkout, or secure payment links where appropriate.</p>
+        <p>Business funds are used for stock, suppliers, shipping, packaging, website/domain/email services, software and marketing.</p>
+      </section>
+
+      <section class="card">
+        <h2>Contact</h2>
+        <p>For product, wholesale, supplier or customer enquiries, contact <a href="mailto:sales@onestopcop.co.uk">sales@onestopcop.co.uk</a>.</p>
+      </section>
+    </div>
   </main>
 </body>
 </html>
